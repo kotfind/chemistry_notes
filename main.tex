@@ -1,11 +1,11 @@
-\documentclass[a4paper,14pt,twocolumn]{article}
+\documentclass[a5paper,14pt]{article}
 
 \usepackage{mathtext}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
-\usepackage[left=30mm, right=10mm,
-            top=20mm, bottom=20mm,
+\usepackage[left=10mm, right=5mm,
+            top=5mm, bottom=5mm,
             bindingoffset=0cm]{geometry}
 
 \newcommand{\rom}[1]{\MakeUppercase{\romannumeral #1}}
@@ -13,12 +13,15 @@
 \setlength{\columnseprule}{0.2pt}
 
 \begin{document}
+    {\LARGE \centering Химия\\ 8 класс\\ Справочник\\}~\\~\\
+    \vspace*{\fill}
+    \setcounter{tocdepth}{2}
+    \tableofcontents
+    \vspace*{\fill}
+
     %TODO Кислород, Водород, Вода
     \input{Основные_классы_неорганических_соединений.tex}
     \input{Оксиды.tex}
     \input{Основания.tex}
     \input{Кислоты.tex}
-
-    \newpage
-    \tableofcontents
 \end{document}
