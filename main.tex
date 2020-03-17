@@ -10,10 +10,16 @@
 \usepackage[left=10mm, right=5mm,
             top=5mm, bottom=5mm,
             bindingoffset=0cm]{geometry}
+\usepackage{titlesec}
+\usepackage{indentfirst}
 
 \newcommand{\rom}[1]{\MakeUppercase{\romannumeral #1}}
 \newcommand{\tarrow}{\stackrel{t}{\rightarrow}}
 \setlength{\columnseprule}{0.2pt}
+
+\titleformat*{\section}{\bf}
+\titleformat*{\subsection}{\bf}
+\titleformat*{\subsubsection}{\bf}
 
 \begin{document}
     {\LARGE \centering Химия\\ 8 класс\\ Справочник\\}~\\~\\
@@ -28,3 +34,4 @@
     \input{Основания.tex}
     \input{Кислоты.tex}
 \end{document}
+
