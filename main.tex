@@ -12,9 +12,15 @@
             bindingoffset=0cm]{geometry}
 \usepackage{titlesec}
 \usepackage{indentfirst}
+\usepackage{amsmath}
 
 \newcommand{\rom}[1]{\MakeUppercase{\romannumeral #1}}
-\newcommand{\tarrow}{\stackrel{t}{\rightarrow}}
+\newcommand{\tarrow}{\xrightarrow{t}}
+
+\newcommand{\ua}{\uparrow}
+\newcommand{\da}{\downarrow}
+\newcommand{\ra}{\rightarrow}
+
 \setlength{\columnseprule}{0.2pt}
 
 \titleformat*{\section}{\bf}
@@ -33,5 +39,6 @@
     \input{Оксиды.tex}
     \input{Основания.tex}
     \input{Кислоты.tex}
+    \input{Соли.tex}
 \end{document}
 
